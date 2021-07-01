@@ -10,12 +10,14 @@ header {
     flex-wrap: wrap;
     align-items: center;
     font-size: 20px;
+    
 }
 
 h1 {
     font-family: 'Dancing Script', cursive;
     font-size: 50px;
 }
+
 .links {
     color: #ffffff;  
     padding: 15px;
@@ -30,9 +32,7 @@ h1 {
 
 div {
     flex: 1;
-    background-color: #660000;
     display: inline-flex;
-    border: #ffb3b3 solid 2px;
 }
 
 #about {
@@ -56,3 +56,66 @@ img:hover{
     margin-top: 70px;
 }
 
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    margin-top: 8%;
+   
+}
+
+.work {
+    color: #660000;
+    font-size: 75px;
+    padding-top: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#soon {
+    font-family: 'Dancing Script', cursive;
+}
+
+h4 {
+    color: #660000;
+    font-size: 75px;
+    font-family: 'Dancing Script', cursive;
+    display: flex;
+}
+
+footer {
+    color: white;
+    font-size: 16px;
+    display: flex;
+    list-style-type: none;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.blink {
+    color: white;
+}
+
+.blink:hover {
+    color: #ffb3b3;
+}
+
+.list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+li {
+    display: flex;
+    padding: 20px;
+}
+
+.abtme {
+    border: #660000 solid 2px;
+}
