@@ -30,9 +30,15 @@ h1 {
     color: #ffb3b3;
 }
 
-div {
-    flex: 1;
-    display: inline-flex;
+.hero-banner {
+    background-image: url(../images/please.jpg);
+    background-size: cover;
+    display: flex;
+    padding: 13%;
+    border: #ffb3b3 solid px;
+    /* width: 100%; */
+    /* align-items: flex-end;
+    justify-content: flex-end; */
 }
 
 #about {
@@ -42,10 +48,12 @@ div {
     font-family: 'Dancing Script', cursive;
     text-align: center;
     list-style-type: none;
-}
-
-img:hover{
-    border: #ffb3b3 ridge 5px;
+    border-right: #ffb3b3 solid 2px;
+    height: 75%;
+    color: #660000;
+    padding-right: 80px;
+    padding-bottom: 50px;
+    padding-left: 30px;
 }
 
 .me {
@@ -53,29 +61,140 @@ img:hover{
     font-family: Georgia, 'Times New Roman', Times, serif;
     list-style-type: none;
     font-size: 18px;
-    margin-top: 70px;
+    margin-top: 50px;
+    margin-left: 20px;
 }
 
 .center {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     height: 200px;
     margin-top: 8%;
-   
-}
-
-.work {
-    color: #660000;
-    font-size: 75px;
-    padding-top: 10%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    flex: 1;
+    display: inline-flex;
+    border: #ffb3b3 solid 3px;
+    width: 100%;
 }
 
 #soon {
     font-family: 'Dancing Script', cursive;
+    color: #660000;
+    display: flex;
+    font-size: 75px;
+    width: 233px;
+    padding-left: 50px;
+}
+
+
+.flexbox {
+    display: flex;
+    border: #ffb3b3 solid 2px;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.flex {
+    display: inline-flex;
+    border: #ffb3b3 solid 2px;
+    flex-wrap: wrap;
+
+}
+
+.divwork {
+    background-color: #ffb3b3;
+    display: block;
+    margin-top: auto;
+    margin-bottom: auto;
+    
+}
+
+.explanations {
+    background-color: #ffb3b3;
+    color: #660000;
+    font-size: 25px;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+span {
+    font-size: 20px
+}
+
+.one {
+    flex: 3;
+    background-image: url(../images/four.jpg);
+    background-size: cover;
+    height: 300px;
+    flex-shrink: 1;
+    width: 100%;
+    min-width: 50%;
+    opacity: 75%;
+}
+.one:hover {
+    opacity: 100%;
+}
+
+.two {
+    flex: 2;
+    background-image: url(../images/five.jpeg);
+    background-size: cover;
+    flex-shrink: 1;
+    height: 200px;
+    flex-basis: 35%;
+    margin-left: 15%; 
+    opacity: 75%;   
+}
+
+.two:hover {
+    opacity: 100%;
+}
+
+.three {
+    flex: 2;
+    background-image: url(../images/six.jpg);
+    background-size: cover;
+    flex-shrink: 1;
+    height: 200px;
+    flex-basis: 35%;
+    opacity: 75%;
+}
+
+.three:hover {
+    opacity: 100%;
+}
+
+.four {
+    flex: 2;
+    background-image: url(../images/starz.jpg);
+    flex-shrink: 1;
+    height: 200px;
+    background-size: cover;
+    flex-basis: 35%;
+    margin-left: 15%;
+    opacity: 75%;
+}
+
+.four:hover {
+    opacity: 100%;
+}
+
+.five {
+    flex: 2;
+    background-image: url(../images/stars.jpg);
+    flex-shrink: 1;
+    height: 200px;
+    background-position: center;
+    background-size: cover;
+    flex-basis: 35%;
+    opacity: 75%;
+}
+
+.five:hover {
+    opacity: 100%;
 }
 
 h4 {
@@ -114,8 +233,4 @@ footer {
 li {
     display: flex;
     padding: 20px;
-}
-
-.abtme {
-    border: #660000 solid 2px;
 }
