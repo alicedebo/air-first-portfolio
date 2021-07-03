@@ -54,15 +54,17 @@ h1 {
     padding-right: 80px;
     padding-bottom: 50px;
     padding-left: 30px;
+    flex-wrap: wrap;
 }
 
 .me {
     color: white;
     font-family: Georgia, 'Times New Roman', Times, serif;
     list-style-type: none;
-    font-size: 18px;
+    font-size: 100%;
     margin-top: 50px;
     margin-left: 20px;
+    flex-wrap: wrap;
 }
 
 .center {
@@ -129,7 +131,7 @@ span {
     background-image: url(../images/four.jpg);
     background-size: cover;
     height: 300px;
-    flex-shrink: 1;
+    flex-shrink: 2;
     width: 100%;
     min-width: 50%;
     opacity: 75%;
@@ -145,7 +147,6 @@ span {
     flex-shrink: 1;
     height: 200px;
     flex-basis: 35%;
-    margin-left: 15%; 
     opacity: 75%;   
 }
 
@@ -174,7 +175,6 @@ span {
     height: 200px;
     background-size: cover;
     flex-basis: 35%;
-    margin-left: 15%;
     opacity: 75%;
 }
 
@@ -202,6 +202,11 @@ h4 {
     font-size: 75px;
     font-family: 'Dancing Script', cursive;
     display: flex;
+}
+
+.myimage {
+    border: #ffb3b3 double 10px;
+    margin-top: 10px;
 }
 
 footer {
@@ -233,4 +238,34 @@ footer {
 li {
     display: flex;
     padding: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .me {
+        flex-wrap: wrap;
+        font-size: 75%;
+    }
+    #about, #soon, #contact {
+        font-size: 200%;
+        color: #ffb3b3;
+    }
+    .explanations {
+        font-size: 100%;
+    }
+    .myimage {
+        width: 75px;
+        height: 150px;
+    }
+    h1 {
+        font-size: 100%;
+    }
+    .links {
+        font-size: 50%;
+    }
+    li {
+        font-size: 75%;
+    }
+    .one {
+        height: auto;
+    }
 }
