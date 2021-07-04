@@ -1,7 +1,9 @@
+/* Universal Selector */
 * {
     background-color: black;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Georgia', 'Times New Roman', 'Times', 'serif';
 }
+/* Nav */
 header {
     color: #ffb3b3;
     display: flex;
@@ -10,11 +12,10 @@ header {
     flex-wrap: wrap;
     align-items: center;
     font-size: 20px;
-    
 }
 
 h1 {
-    font-family: 'Dancing Script', cursive;
+    font-family: 'Dancing Script', 'cursive';
     font-size: 50px;
 }
 
@@ -22,51 +23,21 @@ h1 {
     color: #ffffff;  
     padding: 15px;
     font-size: 16px;
-    font-family:Georgia, 'Times New Roman', Times, serif;
 }
 
 .links:hover {
     cursor: grab;
     color: #ffb3b3;
 }
-
+/* hero banner */
 .hero-banner {
     background-image: url(../images/please.jpg);
     background-size: cover;
     display: flex;
     padding: 13%;
     border: #ffb3b3 solid px;
-    /* width: 100%; */
-    /* align-items: flex-end;
-    justify-content: flex-end; */
 }
-
-#about {
-    color: #660000;
-    font-size: 75px;
-    margin-left: 20px;
-    font-family: 'Dancing Script', cursive;
-    text-align: center;
-    list-style-type: none;
-    border-right: #ffb3b3 solid 2px;
-    height: 75%;
-    color: #660000;
-    padding-right: 80px;
-    padding-bottom: 50px;
-    padding-left: 30px;
-    flex-wrap: wrap;
-}
-
-.me {
-    color: white;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    list-style-type: none;
-    font-size: 100%;
-    margin-top: 50px;
-    margin-left: 20px;
-    flex-wrap: wrap;
-}
-
+/* about me */
 .center {
     display: flex;
     justify-content: flex-start;
@@ -79,16 +50,25 @@ h1 {
     width: 100%;
 }
 
-#soon {
-    font-family: 'Dancing Script', cursive;
+#about {
     color: #660000;
-    display: flex;
     font-size: 75px;
-    width: 233px;
-    padding-left: 50px;
+    margin-left: 20px;
+    font-family: 'Dancing Script', 'cursive';
+    text-align: center;
+    border-right: #ffb3b3 solid 2px;
+    height: 75%;
+    padding-right: 80px;
+    padding-bottom: 50px;
+    padding-left: 30px;
 }
 
-
+.me {
+    color: white;
+    font-size: 100%;
+    flex-wrap: wrap;
+}
+/* Portfolio */
 .flexbox {
     display: flex;
     border: #ffb3b3 solid 2px;
@@ -97,11 +77,22 @@ h1 {
     flex-wrap: wrap;
 }
 
+
+#work {
+    font-family: 'Dancing Script', 'cursive';
+    color: #660000;
+    display: flex;
+    font-size: 75px;
+    width: 233px;
+    padding-left: 50px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
 .flex {
     display: inline-flex;
     border: #ffb3b3 solid 2px;
     flex-wrap: wrap;
-
 }
 
 .divwork {
@@ -109,21 +100,12 @@ h1 {
     display: block;
     margin-top: auto;
     margin-bottom: auto;
-    
 }
 
 .explanations {
     background-color: #ffb3b3;
-    color: #660000;
+    color: black;
     font-size: 25px;
-}
-
-h3 {
-    font-size: 30px;
-}
-
-span {
-    font-size: 20px
 }
 
 .one {
@@ -136,55 +118,25 @@ span {
     min-width: 50%;
     opacity: 75%;
 }
-.one:hover {
-    opacity: 100%;
-}
 
 .two {
-    flex: 2;
-    background-image: url(../images/five.jpeg);
-    background-size: cover;
-    flex-shrink: 1;
-    height: 200px;
-    flex-basis: 35%;
-    opacity: 75%;   
-}
-
-.two:hover {
-    opacity: 100%;
+    background-image: url(../images/five.jpeg); 
 }
 
 .three {
-    flex: 2;
     background-image: url(../images/six.jpg);
-    background-size: cover;
-    flex-shrink: 1;
-    height: 200px;
-    flex-basis: 35%;
-    opacity: 75%;
-}
-
-.three:hover {
-    opacity: 100%;
 }
 
 .four {
-    flex: 2;
     background-image: url(../images/starz.jpg);
-    flex-shrink: 1;
-    height: 200px;
-    background-size: cover;
-    flex-basis: 35%;
-    opacity: 75%;
-}
-
-.four:hover {
-    opacity: 100%;
 }
 
 .five {
-    flex: 2;
     background-image: url(../images/stars.jpg);
+}
+
+.two, .three, .four, .five {
+    flex: 2;
     flex-shrink: 1;
     height: 200px;
     background-position: center;
@@ -193,14 +145,26 @@ span {
     opacity: 75%;
 }
 
-.five:hover {
+.one:hover, .two:hover, .three:hover, .four:hover, .five:hover {
     opacity: 100%;
 }
+/* Contact Me */
+footer {
+    color: white;
+    font-size: 16px;
+    display: flex;
+    list-style-type: none;
+    font-family: 'Georgia', 'Times New Roman', 'Times', 'serif';
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
 
-h4 {
+#contact {
     color: #660000;
     font-size: 75px;
-    font-family: 'Dancing Script', cursive;
+    font-family: 'Dancing Script', 'cursive';
     display: flex;
 }
 
@@ -209,27 +173,7 @@ h4 {
     margin-top: 10px;
 }
 
-footer {
-    color: white;
-    font-size: 16px;
-    display: flex;
-    list-style-type: none;
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    align-items: center;
-}
-
-.blink {
-    color: white;
-}
-
-.blink:hover {
-    color: #ffb3b3;
-}
-
-.list {
+ul {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -240,32 +184,44 @@ li {
     padding: 20px;
 }
 
+.blink {
+    color: white;
+}
+
+.blink:hover {
+    color: #ffb3b3;
+}
+
+/* media */
 @media screen and (max-width: 768px) {
     .me {
         flex-wrap: wrap;
-        font-size: 75%;
+        font-size: 70%;
     }
-    #about, #soon, #contact {
+
+    .links {
+        font-size: 50%;
+    }
+
+    .one {
+        height: auto;
+    }
+
+    #about, #work, #contact {
         font-size: 200%;
         color: #ffb3b3;
     }
-    .explanations {
+
+    .explanations, h1 {
         font-size: 100%;
     }
+
     .myimage {
         width: 75px;
         height: 150px;
     }
-    h1 {
-        font-size: 100%;
-    }
-    .links {
-        font-size: 50%;
-    }
+
     li {
         font-size: 75%;
-    }
-    .one {
-        height: auto;
     }
 }
